@@ -29,7 +29,7 @@ contract OurTokenTest is Test {
     function testAllowanceWorks() public {
         uint256 initialAllowance = 1000;
 
-        // Bob approves Alice to spend tokens on his behalf 
+        // Bob approves Alice to spend tokens on his behalf
         vm.prank(bob);
         ourToken.approve(alice, initialAllowance);
 
